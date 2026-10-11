@@ -10,6 +10,8 @@ add_executable(Lab-work-2
     sequenceGenerator.cpp
     sequenceStore.cpp
     timer.cpp
+    experiments.cpp
+    myAnyOf.h
 )
 
 if(MSVC)
