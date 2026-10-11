@@ -45,17 +45,12 @@ std::ifstream SequenceStore::openForReading(const std::filesystem::path& path) {
 }
 
 void SequenceStore::write(const std::filesystem::path& path, const std::vector<int>& sequence) {
-    constexpr std::size_t kNumbersPerLine = 20;
-
     std::ofstream out(path);
     if (!out) {
         throw std::runtime_error("Cannot create data file: " + path.string());
     }
     out << sequence.size() << '\n';
-    for (std::size_t i = 0; i < sequence.size(); ++i) {
-        const bool endOfLine = (i + 1) % kNumbersPerLine == 0 || i + 1 == sequence.size();
-        for (int value : sequence) {
-            out << value << '\n';
-        }
+    for (int value : sequence) {
+        out << value << '\n';
     }
 }

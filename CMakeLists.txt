@@ -9,6 +9,7 @@ add_executable(Lab-work-2
     main.cpp
     sequenceGenerator.cpp
     sequenceStore.cpp
+    timer.cpp
 )
 
 if(MSVC)
