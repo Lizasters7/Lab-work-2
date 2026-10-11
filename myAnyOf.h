@@ -5,7 +5,7 @@
 #include <vector>
 
 template <typename Predicate>
-bool parallelAnyOf(const std::vector<int>& data, std::size_t threadCount, Predicate predicate) {
+bool myAnyOf(const std::vector<int>& data, std::size_t threadCount, Predicate predicate) {
     std::vector<char> found(threadCount, 0);  
     std::vector<std::thread> threads;
     threads.reserve(threadCount);

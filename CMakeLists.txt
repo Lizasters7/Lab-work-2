@@ -11,7 +11,6 @@ add_executable(Lab-work-2
     sequenceStore.cpp
     timer.cpp
     experiments.cpp
-    myAnyOf.h
 )
 
 if(MSVC)
