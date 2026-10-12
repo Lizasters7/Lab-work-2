@@ -1,5 +1,4 @@
-#include "SequenceGenerator.h"
-
+#include "sequenceGenerator.h"
 #include <algorithm>
 
 SequenceGenerator::SequenceGenerator(std::uint32_t seed)

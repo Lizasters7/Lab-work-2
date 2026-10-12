@@ -1,4 +1,4 @@
-#include "Timer.h"
+#include "timer.h"
 #include <algorithm>
 #include <chrono>
 #include <vector>
