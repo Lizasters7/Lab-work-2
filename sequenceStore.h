@@ -5,6 +5,9 @@
 #include <filesystem>
 #include <vector>
 
+/*File format:
+the first line is the number of elements N (N >= 0);
+then come N integers, separated by spaces or line breaks.*/
 class SequenceStore {
 public:
     static constexpr std::array<std::size_t, 4> kSizes = {1000, 100000, 1000000, 10000000};
